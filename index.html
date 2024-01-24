@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>TicTacToe</h1>
+        <form id="gameForm">
+            <div class="bigElement">
+                <div class="element">
+                    <label for="player1">Player 1 Name (O):</label>
+                    <input type="text" id="player1" name="player1" required>
+                </div>
+
+                <div class="element">
+                    <label for="player2">Player 2 Name(X):</label>
+                    <input type="text" id="player2" name="player2" required>
+                </div>
+            </div>
+
+            <button type="submit" class="formButton">Start Game</button>
+        </form>
+        <div class="play"></div>
+        <button class="reset">Restart</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

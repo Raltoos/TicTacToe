@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #94a3b8;
+}
+
+.container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 15px;
+}
+
+.container:first-child{
+    margin-top: 15px;
+}
+
+.play{
+    background-color: antiquewhite;
+    width: 300px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cell {
+    font-size: 2rem;
+    height: 100px;
+    width: 100px;
+    border: 1px solid grey;
+    background: lightyellow;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: #f0f0f0;
+}
+
+.reset {
+    font-size: 16px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.reset:hover {
+    background-color: #45a049;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+input {
+    width: 85%;
+    padding: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.formButton {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    display: block;
+    margin: 0px auto;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.bigElement{
+    display: flex;
+    gap: 5px;
+}
