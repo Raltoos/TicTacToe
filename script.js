@@ -136,14 +136,14 @@ function gameControl(
 function screenController(){
 
     const gamePlayArea = document.querySelector('.play');
-    const resetButton = document.querySelector('.reset');
-    gamePlayArea.style.gridTemplateColumns = "repeat(3, 1fr)";
+    const resetButton = document.querySelector('.reset');   
     let player1;
     let player2;
     let game;
 
     const renderBoard = () => {
         gamePlayArea.innerText = "";
+        gamePlayArea.style.gridTemplateColumns = "repeat(3, 1fr)";
         for(let i = 0; i < 3; i++){
             for(let j = 0; j < 3; j++){
                 const cellButton = document.createElement("button");
@@ -184,17 +184,14 @@ function screenController(){
         });
         });
         resetButton.addEventListener('click', function (){
-            var form = document.getElementById('gameForm');
-            form.reset();
-
-            // Clear the game area
             gamePlayArea.innerHTML = "";
+            
+            renderBoard();  
+
+            game = gameControl(player1.value, player2.value);
 
             startGame();
         });
-
-        var form = document.getElementById('gameForm');
-        form.reset();
 
     }
 
